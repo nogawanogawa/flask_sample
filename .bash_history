@@ -128,3 +128,49 @@ exit
 python3 microservice/myapp.py 
 pytest -v
 exit
+pytest -v
+exit
+pytest -v
+exit
+pytest -v
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit
+pytest
+exit

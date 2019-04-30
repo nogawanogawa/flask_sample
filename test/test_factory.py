@@ -1,5 +1,5 @@
 from microservice import create_app
-import json
+import urllib.request, json
 
 def test_search(client):
     response = client.get('/myapp/search/')
@@ -9,8 +9,7 @@ def test_search(client):
     assert shards['failed'] == 0
 
 def test_register(client):
-    response = client.post('/myapp/register/',  data=dict(title="hoge", contents="piyo"))
-
-    data = json.loads(response.data)
-
-    assert data['result'] == 'created'
+    rv = client.post('/myapp/register/', json={'title': 'flask', 'contents': 'secret'})
+    json_data = json.loads(rv.data)
+    s  = json_data['result']
+    assert s == 'created'
